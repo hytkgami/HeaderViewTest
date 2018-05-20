@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderView" customModule="HeaderViewTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="481" height="138"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BSz-aJ-vae">
+                    <rect key="frame" x="0.0" y="0.0" width="481" height="138"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MM/DD 今日の天気" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sy1-Oi-w92">
+                            <rect key="frame" x="8" y="8" width="149.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xx地方" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbL-sf-kUj">
+                            <rect key="frame" x="8" y="59" width="52" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="晴れ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqa-mf-Jh0">
+                            <rect key="frame" x="72" y="59" width="35" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="sy1-Oi-w92" firstAttribute="top" secondItem="BSz-aJ-vae" secondAttribute="top" constant="8" id="3uy-tw-kof"/>
+                        <constraint firstItem="Kqa-mf-Jh0" firstAttribute="centerY" secondItem="BSz-aJ-vae" secondAttribute="centerY" id="KTJ-Gb-Fmp"/>
+                        <constraint firstItem="sy1-Oi-w92" firstAttribute="leading" secondItem="BSz-aJ-vae" secondAttribute="leading" constant="8" id="Maj-7S-sbZ"/>
+                        <constraint firstItem="IbL-sf-kUj" firstAttribute="centerY" secondItem="BSz-aJ-vae" secondAttribute="centerY" id="URG-M9-rbg"/>
+                        <constraint firstItem="IbL-sf-kUj" firstAttribute="leading" secondItem="BSz-aJ-vae" secondAttribute="leading" constant="8" id="njV-Q0-3Hw"/>
+                        <constraint firstItem="Kqa-mf-Jh0" firstAttribute="leading" secondItem="IbL-sf-kUj" secondAttribute="trailing" constant="12" id="wRz-zJ-rXn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BSz-aJ-vae" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="8Ta-uX-0JW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="BSz-aJ-vae" secondAttribute="bottom" id="Vsh-8o-Pwp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="BSz-aJ-vae" secondAttribute="trailing" id="Xa0-rM-j20"/>
+                <constraint firstItem="BSz-aJ-vae" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="jtx-2s-cyj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="dataLabel" destination="Kqa-mf-Jh0" id="Hrw-mU-nPj"/>
+                <outlet property="menstruationDataLabel" destination="IbL-sf-kUj" id="hf7-9x-wg6"/>
+                <outlet property="titleLabel" destination="sy1-Oi-w92" id="Jke-Oq-Jxf"/>
+            </connections>
+            <point key="canvasLocation" x="86.5" y="-188"/>
+        </view>
+    </objects>
+</document>
